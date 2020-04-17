@@ -1,10 +1,10 @@
-# wouldUrather
+# flash-cards
 
-wouldUrather is a simple question answering game. Users can answer questions, see how they stack up compared to others, and create questions themselves.
+flash-cards is a simple question answering game. Users can answer questions, see how they stack up compared to others, and create questions themselves. The mobile app has been tested on ios and andriod phones (no emulators).
 
 ## Getting Started
 
-As of now the project is only available to Udacity members and myself, but it will be up on github shortly. Once it is on github, the project can be cloned and ran locally.
+As of now the project is available on github. It can be cloned and ran locally.
 
 ### Prerequisites
 
@@ -13,7 +13,7 @@ project
 
 ### Launching
 
-The project can be launched by running:  and then
+The project can be launched by running:   and then
 
 
 ```
@@ -28,7 +28,7 @@ npm start
 
 ## Built With
 
-* [React](https://reactjs.org/) - The web framework used
+* [React-Native](https://reactnative.dev/) - The javascript framework used
 
 
 ## Authors
@@ -43,4 +43,4 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 ## Acknowledgments
 
 
-* The code started as Udacity's React nanodegree --> React-Redux section --> Lesson 7: Real World Redux --> [Chirper app](https://github.com/udacity/reactnd-chirper-app.git) and was modified into wouldUrather
+* The code started as Udacity's React nanodegree --> React-Native --> [Udacifitness app](https://github.com/udacity/reactnd-UdaciFitness-complete) and was modified into the flash-cards app.
