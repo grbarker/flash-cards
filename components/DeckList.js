@@ -9,10 +9,6 @@ import { Materialicons } from '@expo/vector-icons';
 
 class DeckList extends Component {
 
-  state = {
-    bounceValue: new Animated.Value(1),
-  }
-
   componentDidMount() {
     const { decks, dispatch } = this.props
 
@@ -21,7 +17,6 @@ class DeckList extends Component {
 
   render() {
     const { decks } =  this.props
-    const { bounceValue } = this.state
 
     return (
       <ScrollView>
@@ -33,18 +28,11 @@ class DeckList extends Component {
               <TouchableOpacity
                 style={styles.button}
                 onPress={() => {
-                  Animated.sequence([
-                    Animated.timing(bounceValue, { duration: 200, toValue: 1.04}),
-                    Animated.spring(bounceValue, { toValue: 1, friction: 4})
-                  ]).start()
                   this.props.navigation.navigate(
                   'DeckHomePage',
                   { deckName: key }
                 )}}>
-                <Animated.Text
-                  style={[styles.direction, {transform: [{scale: bounceValue}]}]}>
-                    {title}
-                </Animated.Text>
+                <Text style={styles.direction}>{title}</Text>
                 <Text style={styles.direction}>{questions.length} cards</Text>
               </TouchableOpacity>
             </View>
